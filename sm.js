@@ -14,7 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const newLinkInput = document.getElementById('newLink');
     const newLinkNameInput = document.getElementById('newLinkName');
 
-  
+    socialBoxesContainer.addEventListener('click', function(event) {
+        if (event.target.classList.contains('social-remove-button')) {
+          const linkToRemove = event.target.parentElement;
+          socialBoxesContainer.removeChild(linkToRemove);
+          const linkUrl = linkToRemove.getAttribute('href');
+          storedLinks.forEach((linkData, index) => {
+            if (linkData.url === linkUrl) {
+              storedLinks.splice(index, 1);
+            }
+          });          localStorage.setItem('socialLinks', JSON.stringify(storedLinks));
+        }
+      });
+    
     addLinkBtn.addEventListener('click', function() {
       const newLinkUrl = newLinkInput.value.trim();
       const newLinkName = newLinkNameInput.value.trim();
