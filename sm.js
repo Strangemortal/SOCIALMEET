@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       link.target = '_blank';
   
       const img = document.createElement('img');
-      img.src = 'logos/costum.png';
+      img.src = 'costum.png';
       img.alt = name + ' Logo';
       img.style.maxWidth = '70px';
       img.style.maxHeight = '70px';
