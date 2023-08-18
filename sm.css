@@ -2,8 +2,23 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: linear-gradient(
+    to bottom,
+    #333232,
+    #3a3b3b,
+    #4e4f4f,
+    #5f6161,
+    #646767,
+    #818a8a,
+    #9babab,
+    #b9c0c0
+  );
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1:hover {
   color: #9f84f0;
 }
@@ -70,7 +85,7 @@ header {
 .social-box:hover {
   transform: scale(1.1);
   border-color: #999;
-  background-color: #f4f5ce;
+  background-color: #ebf041;
 }
 
 .social-box img {
@@ -88,56 +103,87 @@ header {
   border-color: #1877f2;
 }
 
+.social-box.facebook:hover {
+  background-color: #1877f2; /* Sets the background color to the border color */
+}
+
 .social-box.twitter {
   border-color: #1da1f2;
 }
-
+.social-box.twitter:hover {
+  background-color: #1da1f2; /* Sets the background color to the border color */
+}
 .social-box.instagram {
   border-color: #c13584;
 }
-
+.social-box.instagram:hover {
+  background-color: #c13584; /* Sets the background color to the border color */
+}
 .social-box.youtube {
   border-color: #ff0000;
 }
-
+.social-box.youtube:hover {
+  background-color: #ff0000; /* Sets the background color to the border color */
+}
 .social-box.pinterest {
   border-color: #bd081c;
 }
-
+.social-box.pinterest:hover {
+  background-color: #bd081c; /* Sets the background color to the border color */
+}
 .social-box.google {
   border-color: #4285f4;
 }
-
+.social-box.google:hover {
+  background-color: #4285f4; /* Sets the background color to the border color */
+}
 .social-box.flipkart {
   border-color: #ee1f25;
 }
-
+.social-box.flipkart:hover {
+  background-color: #ee1f25; /* Sets the background color to the border color */
+}
 .social-box.amazon {
   border-color: #ff9900;
 }
-
+.social-box.amazon:hover {
+  background-color: #ff9900; /* Sets the background color to the border color */
+}
 .social-box.nykaa {
   border-color: #ff3d00;
 }
-
+.social-box.nykaa:hover {
+  background-color: #ff3d00; /* Sets the background color to the border color */
+}
 .social-box.linkedin {
   border-color: #0e76a8;
 }
-
+.social-box.linkedin:hover {
+  background-color: #0e76a8; /* Sets the background color to the border color */
+}
 .social-box.snapchat {
   border-color: #fffc00;
 }
-
+.social-box.snapchat:hover {
+  background-color: #fffc00; /* Sets the background color to the border color */
+}
 .social-box.reddit {
   border-color: #ff4500;
 }
-
+.social-box.reddit:hover {
+  background-color: #ff4500; /* Sets the background color to the border color */
+}
 .social-box.telegram {
   border-color: #0088cc;
 }
-
+.social-box.telegram:hover {
+  background-color: #0088cc; /* Sets the background color to the border color */
+}
 .social-box.discord {
   border-color: #7289da;
+}
+.social-box.discord:hover {
+  background-color: #7289da; /* Sets the background color to the border color */
 }
 .footer {
   background-color: #333;
@@ -178,4 +224,54 @@ header {
 
 .dropdown a:hover {
   color: #ff8989;
+}
+.add-link-container{display:flex;text-align:center;
+margin: auto auto}
+.add-link-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-link-container input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add-link-container input[type="text"]:hover,
+.add-link-container input[type="text"]:focus {
+  border-color: #999;
+}
+
+.add-link-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-link-container button:hover {
+  background-color: #45a049;
+}
+.social-remove-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-remove-button:hover {
+  background-color: #d32f2f;
 }
