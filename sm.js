@@ -8,25 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
       const newLink = createSocialLink(linkData.url, linkData.name);
       socialBoxesContainer.appendChild(newLink);
     });
-    // ... (your existing code) ...
   
     const addLinkBtn = document.getElementById('addLinkBtn');
     const newLinkInput = document.getElementById('newLink');
     const newLinkNameInput = document.getElementById('newLinkName');
-
+  
     socialBoxesContainer.addEventListener('click', function(event) {
-        if (event.target.classList.contains('social-remove-button')) {
-          const linkToRemove = event.target.parentElement;
-          socialBoxesContainer.removeChild(linkToRemove);
-          const linkUrl = linkToRemove.getAttribute('href');
-          storedLinks.forEach((linkData, index) => {
-            if (linkData.url === linkUrl) {
-              storedLinks.splice(index, 1);
-            }
-          });          localStorage.setItem('socialLinks', JSON.stringify(storedLinks));
-        }
-      });
-    
+      if (event.target.classList.contains('social-remove-button')) {
+        const linkToRemove = event.target.parentElement;
+        socialBoxesContainer.removeChild(linkToRemove);
+  
+        // Update local storage data by removing the link
+        const linkUrl = linkToRemove.getAttribute('href');
+        storedLinks.forEach((linkData, index) => {
+          if (linkData.url === linkUrl) {
+            storedLinks.splice(index, 1);
+          }
+        });
+        localStorage.setItem('socialLinks', JSON.stringify(storedLinks));
+      }
+    });
+  
     addLinkBtn.addEventListener('click', function() {
       const newLinkUrl = newLinkInput.value.trim();
       const newLinkName = newLinkNameInput.value.trim();
@@ -36,11 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
         socialBoxesContainer.appendChild(newLink);
         newLinkInput.value = '';
         newLinkNameInput.value = '';
+  
+        // Store the new link in local storage
         storedLinks.push({ url: newLinkUrl, name: newLinkName });
         localStorage.setItem('socialLinks', JSON.stringify(storedLinks));
       }
     });
-
   
     function createSocialLink(url, name) {
       const link = document.createElement('a');
@@ -61,13 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const removeButton = document.createElement('button');
       removeButton.classList.add('social-remove-button');
       removeButton.textContent = 'Remove';
-      removeButton.addEventListener('click', function() {
-        socialBoxesContainer.removeChild(link); // Remove the social box when Remove button is clicked
-      });
   
       link.appendChild(img);
       link.appendChild(span);
-      link.appendChild(removeButton); // Append the remove button to the social box
+      link.appendChild(removeButton);
   
       return link;
     }
