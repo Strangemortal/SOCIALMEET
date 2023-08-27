@@ -104,15 +104,14 @@ header {
 }
 
 .social-box.facebook:hover {
-  background-color: #1877f2; /* Sets the background color to the border color */
-}
+  background-color: #1877f2;} /* Sets the background color to the border color*/
 
-.social-box.twitter {
+ .social-box.twitter {
   border-color: #1da1f2;
 }
 .social-box.twitter:hover {
-  background-color: #1da1f2; /* Sets the background color to the border color */
-}
+   background-color: #1da1f2;} /*Sets the background color to the border color  */
+
 .social-box.instagram {
   border-color: #c13584;
 }
@@ -274,4 +273,22 @@ margin: auto auto}
 
 .social-remove-button:hover {
   background-color: #d32f2f;
+}
+
+
+
+
+
+ .dark-theme .theme-switch-slider {
+  background-color: #e8e3e3; 
+}
+
+.dark-theme .theme-switch-slider:before {
+  background-color: #533e3e;
+  left: calc(100% - 23px);
+}
+
+
+.theme-switch:checked + .theme-switch-slider:before {
+  transform: translateX(26px); 
 }
