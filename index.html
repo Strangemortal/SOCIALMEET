@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SocialMeet</title>
     <link rel="stylesheet" href="sm.css" />
-        <link rel="shortcut icon" href="costum.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="costum.ico" type="image/x-icon">
+    <link rel="stylesheet" href="sml.css" id="theme-style">
+
   </head>
   <body>
     <div id="background-change"></div>
@@ -23,11 +25,17 @@
         </ul>
       </nav>
     </header>
+
+    
+    
+
     <div class="add-link-container">
       <input type="text" id="newLink" placeholder="Enter URL" />
       <input type="text" id="newLinkName" placeholder="Enter Box Name" />
       <button id="addLinkBtn">Add Link</button>
     </div>
+    <label for="theme-switch" class="theme-switch-label">Dark Mode</label>
+    <input type="range" min="0" max="1" value="0" class="theme-switch" id="theme-slider">
     <div class="social-boxes">
 
       
@@ -36,7 +44,7 @@
         href="https://www.facebook.com"
         target="_blank"
       >
-        <img src="fb.png" alt="Facebook Logo" />
+        <img src="logos/fb.png" alt="Facebook Logo" />
         <span class="social-name">Facebook</span>
       </a>
       <a
@@ -44,7 +52,7 @@
         href="https://www.twitter.com"
         target="_blank"
       >
-        <img src="twit.jpg" alt="Twitter Logo" />
+        <img src="logos/twit.png" alt="Twitter Logo" />
         <span class="social-name">Twitter</span>
       </a>
       <a
@@ -52,7 +60,7 @@
         href="https://www.instagram.com"
         target="_blank"
       >
-        <img src="insta.jpeg" alt="Instagram Logo" />
+        <img src="logos/insta.jpeg" alt="Instagram Logo" />
         <span class="social-name">Instagram</span>
       </a>
       <a
@@ -60,7 +68,7 @@
         href="https://www.youtube.com"
         target="_blank"
       >
-        <img src="yt.png" alt="YouTube Logo" />
+        <img src="logos/yt.png" alt="YouTube Logo" />
         <span class="social-name">YouTube</span>
       </a>
       <a
@@ -68,7 +76,7 @@
         href="https://www.pinterest.com"
         target="_blank"
       >
-        <img src="pin.png" alt="Pinterest Logo" />
+        <img src="logos/pin.png" alt="Pinterest Logo" />
         <span class="social-name">Pinterest</span>
       </a>
 
@@ -77,7 +85,7 @@
         href="https://www.google.com"
         target="_blank"
       >
-        <img src="googke.png" alt="Google Logo" />
+        <img src="logos/googke.png" alt="Google Logo" />
         <span class="social-name">Google</span>
       </a>
       <a
@@ -85,7 +93,7 @@
         href="https://www.flipkart.com"
         target="_blank"
       >
-        <img src="flp.jpeg" alt="Flipkart Logo" />
+        <img src="logos/flp.jpeg" alt="Flipkart Logo" />
         <span class="social-name">Flipkart</span>
       </a>
       <a
@@ -93,19 +101,19 @@
         href="https://www.amazon.com"
         target="_blank"
       >
-        <img src="amz.png" alt="Amazon Logo" />
+        <img src="logos/amz.png" alt="Amazon Logo" />
         <span class="social-name">Amazon</span>
       </a>
-      <a class="social-box nykaa" href="https://www.classcentral.com/" target="_blank">
-        <img src="cs.jpg" alt="class central Logo" />
-        <span class="social-name">class central</span>
+      <a class="social-box nykaa" href="https://www.nykaa.com" target="_blank">
+        <img src="logos/ny.jpeg" alt="Nykaa Logo" />
+        <span class="social-name">Nykaa</span>
       </a>
       <a
         class="social-box linkedin"
         href="https://www.linkedin.com"
         target="_blank"
       >
-        <img src="link.png" alt="LinkedIn Logo" />
+        <img src="logos/link.png" alt="LinkedIn Logo" />
         <span class="social-name">LinkedIn</span>
       </a>
       <a
@@ -113,7 +121,7 @@
         href="https://www.snapchat.com"
         target="_blank"
       >
-        <img src="snap.png" alt="Snapchat Logo" />
+        <img src="logos/snap.png" alt="Snapchat Logo" />
         <span class="social-name">Snapchat</span>
       </a>
       <a
@@ -121,7 +129,7 @@
         href="https://www.reddit.com"
         target="_blank"
       >
-        <img src="red.png" alt="Reddit Logo" />
+        <img src="logos/red.png" alt="Reddit Logo" />
         <span class="social-name">Reddit</span>
       </a>
       <a
@@ -129,7 +137,7 @@
         href="https://www.telegram.org"
         target="_blank"
       >
-        <img src="tele.jpeg" alt="Telegram Logo" />
+        <img src="logos/tele.jpeg" alt="Telegram Logo" />
         <span class="social-name">Telegram</span>
       </a>
       <a
@@ -137,7 +145,7 @@
         href="https://www.discord.com"
         target="_blank"
       >
-        <img src="dis.png" alt="Discord Logo" />
+        <img src="logos/dis.png" alt="Discord Logo" />
         <span class="social-name">Discord</span>
       </a>
     </div>
