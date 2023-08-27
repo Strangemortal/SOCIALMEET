@@ -1,0 +1,393 @@
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1:hover {
+    color: #9f84f0;
+  }
+  h1 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+
+    text-align: center;
+    padding: 1rem 0;
+    animation: fadeIn 1s ease-in-out;
+    z-index: 100;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .header-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  
+  .social-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .social-box {
+    flex: 0 0 calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
+      background-color 0.2s ease-in-out;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-box:hover {
+    transform: scale(1.1);
+    border-color: #999;
+    background-color: #ebf041;
+  }
+  
+  .social-box img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .social-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .social-box.facebook {
+    border-color: #1877f2;
+  }
+  
+  .social-box.facebook:hover {
+    background-color: #1877f2;} /* Sets the background color to the border color*/
+  
+   .social-box.twitter {
+    border-color: #1da1f2;
+  }
+  .social-box.twitter:hover {
+     background-color: #1da1f2;} /*Sets the background color to the border color  */
+  
+  .social-box.instagram {
+    border-color: #c13584;
+  }
+  .social-box.instagram:hover {
+    background-color: #c13584; /* Sets the background color to the border color */
+  }
+  .social-box.youtube {
+    border-color: #ff0000;
+  }
+  .social-box.youtube:hover {
+    background-color: #ff0000; /* Sets the background color to the border color */
+  }
+  .social-box.pinterest {
+    border-color: #bd081c;
+  }
+  .social-box.pinterest:hover {
+    background-color: #bd081c; /* Sets the background color to the border color */
+  }
+  .social-box.google {
+    border-color: #4285f4;
+  }
+  .social-box.google:hover {
+    background-color: #4285f4; /* Sets the background color to the border color */
+  }
+  .social-box.flipkart {
+    border-color: #ee1f25;
+  }
+  .social-box.flipkart:hover {
+    background-color: #ee1f25; /* Sets the background color to the border color */
+  }
+  .social-box.amazon {
+    border-color: #ff9900;
+  }
+  .social-box.amazon:hover {
+    background-color: #ff9900; /* Sets the background color to the border color */
+  }
+  .social-box.nykaa {
+    border-color: #ff3d00;
+  }
+  .social-box.nykaa:hover {
+    background-color: #ff3d00; /* Sets the background color to the border color */
+  }
+  .social-box.linkedin {
+    border-color: #0e76a8;
+  }
+  .social-box.linkedin:hover {
+    background-color: #0e76a8; /* Sets the background color to the border color */
+  }
+  .social-box.snapchat {
+    border-color: #fffc00;
+  }
+  .social-box.snapchat:hover {
+    background-color: #fffc00; /* Sets the background color to the border color */
+  }
+  .social-box.reddit {
+    border-color: #ff4500;
+  }
+  .social-box.reddit:hover {
+    background-color: #ff4500; /* Sets the background color to the border color */
+  }
+  .social-box.telegram {
+    border-color: #0088cc;
+  }
+  .social-box.telegram:hover {
+    background-color: #0088cc; /* Sets the background color to the border color */
+  }
+  .social-box.discord {
+    border-color: #7289da;
+  }
+  .social-box.discord:hover {
+    background-color: #7289da; /* Sets the background color to the border color */
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown {
+    text-align: center;
+    background-color: #4e4a4a;
+    padding: 1rem 0;
+    border-top: 2px solid #333;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  .dropdown a {
+    text-decoration: none;
+    color: #efe3e3;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .dropdown a:hover {
+    color: #ff8989;
+  }
+  .add-link-container{display:flex;text-align:center;
+  margin: auto auto}
+  .add-link-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .add-link-container input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .add-link-container input[type="text"]:hover,
+  .add-link-container input[type="text"]:focus {
+    border-color: #999;
+  }
+  
+  .add-link-container button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .add-link-container button:hover {
+    background-color: #45a049;
+  }
+  .social-remove-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .social-remove-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  
+  
+  /* ________________________________________________________________ */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+      to bottom,
+      #ffffff,
+      #f0f0f0,
+      #e2e2e2,
+      #d4d4d4,
+      #c6c6c6,
+      #b8b8b8,
+      #aaaaaa,
+      #9c9c9c
+    );
+    color: #333; 
+  }
+  
+
+  header {
+    background-color: #e5dcdc;
+    color: rgb(35, 34, 34);
+  }
+  
+
+  .social-box {
+    background-color: #fff; 
+    border-color: #ddd; 
+    color: #333; 
+  }
+  
+ 
+  .social-box:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb; 
+  }
+  
+
+  .footer {
+    background-color: #333;
+    color: white;
+  }
+  
+
+  .dropdown {
+    background-color: #4e4a4a;
+  }
+    .dropdown a {
+    color: #efe3e3;
+  }
+  
+
+  .dropdown a:hover {
+    color: #ff8989;
+  }
+  
+
+  .add-link-container input[type="text"],
+  .add-link-container button {
+    background-color: #f7f7f7; 
+    color: #333; 
+    border: 1px solid #ccc; 
+  }
+  
+
+  .add-link-container input[type="text"]:hover,
+  .add-link-container input[type="text"]:focus {
+    border-color: #999; 
+  
+
+  .add-link-container button:hover {
+    background-color: #ddd;
+  }
+  
+
+  .social-remove-button {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+
+  .social-remove-button:hover {
+    background-color: #d32f2f;
+  }
+
+.theme-switch-label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #180101; 
+  }
+  
+  .theme-switch {
+    display: none; 
+  }
+  
+  .theme-switch-slider {
+    position: relative;
+    display: inline-block;
+    width: 50px; 
+    height: 25px;
+    background-color: #827777; 
+    border-radius: 25px; 
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .theme-switch-slider:before {
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    background-color: #c0bbbb;
+    box-shadow: 0px 2px 4px rgba(47, 45, 45, 0.2); 
+    left: 3px; 
+    transition: 0.2s; 
+  }
+  
+ 
+  
