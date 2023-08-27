@@ -14,7 +14,18 @@ body {
     #b9c0c0
   );
 }
+@media screen and (max-width: 768px) {
+  .add-link-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    margin-top: 20px;
+  }
 
+  .add-link-container input[type="text"] {
+    width: 100%; /* Make input fields full-width */
+    margin-bottom: 10px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
